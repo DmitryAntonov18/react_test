@@ -1,32 +1,36 @@
 import React, { Component } from "react";
 import "./App.css";
 
-const ITEMS = [
+var ITEMS = [
   { title: "title", text: "text", id:0 },
   { title: "title2", text: "text2", id:1 },
   { title: "title3", text: "text3", id:2 },
 ]
 class Item extends Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
-      id: 0,
+      id: props.id,
+      title: props.title,
+      text: props.text,
     }
   }
+  
   render(){
     return(
-      <div className="item">
-        <div className="title">{this.props.title}</div>
-        <input className="text" type="text" value={this.props.text}/>
+      <div className="item" id={this.state.id}> 
+        <div className="title">{this.state.title}</div>
+        <input className="text" type="text" value={this.state.text}/>
         <div className="row">
           <div className="add"
             onClick={() => {
-              //this.add();
+                this.setState({text: 'Y'})
             }}
           ></div>
           <div className="close"
             onClick={() => {
-              //this.remove();
+              this.setState({id: 'X'})
+              this.setState({text: 'X'})
             }}
           ></div>
         </div>

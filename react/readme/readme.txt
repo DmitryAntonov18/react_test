@@ -6,7 +6,7 @@ Create a folder called src and run this terminal command:
 npx babel --watch src --out-dir . --presets react-app/prod
 
 npx create-react-app my-app
-cd my-app
+cd /volumes/hdd2/projects/test/react_test/react/my-app
 npm start
 
 npm run build

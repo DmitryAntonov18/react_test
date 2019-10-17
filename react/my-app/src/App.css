@@ -44,3 +44,17 @@
   padding: 30px 0;
   outline: none;
 }
+#root .list .item .add {
+  background-color: green;
+  height: 40px;
+  width: 150px;
+  border-radius: 25px;
+  margin: 20px;
+}
+#root .list .item .close {
+  background-color: tomato;
+  height: 40px;
+  width: 150px;
+  border-radius: 25px;
+  margin: 20px;
+}
