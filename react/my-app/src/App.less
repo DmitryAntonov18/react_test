@@ -25,41 +25,125 @@
     width: 500px;
     padding-top: 50px;
     margin: auto;
+    &.bords{
+      .item{
+        cursor: pointer;
+      }
+    }
     .item{
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       border-radius: 8px;
       border: 1px solid #e3e3e3;
-      padding: 20px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      input{
+        background-color: powderblue;
+      }
+      .content{
+        width:100%;
+      }
       .title{
         font-size: 26px;
+        margin: 0;
         margin-bottom: 30px;
+        border: 0;
+        padding: 10px;
+       border-radius: 8px;
       }
       .text{
         border: 0;
-        background-color: #fff;
         width: 400px;
         height: auto;
-        padding: 30px 0;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin: 0;
+        border: 1px solid #e3e3e3;
         outline: none;
       }
-      .add{
-        background-color: green;
-        height: 40px;
-        width: 150px;
-        border-radius: 25px;
-        margin: 20px;
+      .row{
+        display: flex;
       }
       .close{
         background-color: tomato;
-        height: 40px;
+        height: 30px;
         width: 150px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
         border-radius: 25px;
         margin: 20px;
+        margin-bottom: 0;
       }
+      .change{
+        background-color: orange;
+        height: 30px;
+        width: 150px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        margin: 20px;
+        margin-bottom: 0;
+      }
+      .save{
+        background-color: palegreen;
+        height: 30px;
+        width: 150px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        margin: 20px;
+        margin-bottom: 0;
+      }
+      .active{
+        color: lightseagreen;
+        display: flex;
+        width: 50px;
+      }
+      .complete{
+        color: green;
+      }
+    }
+    .add{
+      background-color: greenyellow;
+      height: 30px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      border-radius: 25px;
+      margin: 10px auto;
+    }
+    .enter{
+      background-color: greenyellow;
+      height: 30px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      border-radius: 25px;
+      margin: 10px auto;
+    }
+    .back{
+      background-color: greenyellow;
+      height: 40px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      border-radius: 25px;
+      margin: 10px auto;
     }
   }
 }

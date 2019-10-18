@@ -22,39 +22,121 @@
   padding-top: 50px;
   margin: auto;
 }
+#root .list.bords .item {
+  cursor: pointer;
+}
 #root .list .item {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #e3e3e3;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+#root .list .item input {
+  background-color: powderblue;
+}
+#root .list .item .content {
+  width: 100%;
+}
 #root .list .item .title {
   font-size: 26px;
+  margin: 0;
   margin-bottom: 30px;
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
 }
 #root .list .item .text {
   border: 0;
-  background-color: #fff;
   width: 400px;
   height: auto;
-  padding: 30px 0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 0;
+  border: 1px solid #e3e3e3;
   outline: none;
 }
-#root .list .item .add {
-  background-color: green;
-  height: 40px;
-  width: 150px;
-  border-radius: 25px;
-  margin: 20px;
+#root .list .item .row {
+  display: flex;
 }
 #root .list .item .close {
   background-color: tomato;
-  height: 40px;
+  height: 30px;
   width: 150px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
   border-radius: 25px;
   margin: 20px;
+  margin-bottom: 0;
+}
+#root .list .item .change {
+  background-color: orange;
+  height: 30px;
+  width: 150px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+#root .list .item .save {
+  background-color: palegreen;
+  height: 30px;
+  width: 150px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+#root .list .item .active {
+  color: lightseagreen;
+  display: flex;
+  width: 50px;
+}
+#root .list .item .complete {
+  color: green;
+}
+#root .list .add {
+  background-color: greenyellow;
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-radius: 25px;
+  margin: 10px auto;
+}
+#root .list .enter {
+  background-color: greenyellow;
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-radius: 25px;
+  margin: 10px auto;
+}
+#root .list .back {
+  background-color: greenyellow;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 25px;
+  margin: 10px auto;
 }
